@@ -4,20 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "partnerize-ios-sp-sdk",
+    name: "PartnerizeSDK",
+    platforms: [
+        .iOS(.v16),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "partnerize-ios-sp-sdk",
-            targets: ["partnerize-ios-sp-sdk"]),
+            name: "PartnerizeSDK",
+            targets: ["PartnerizeSDK"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "partnerize-ios-sp-sdk"),
-        .testTarget(
-            name: "partnerize-ios-sp-sdkTests",
-            dependencies: ["partnerize-ios-sp-sdk"]),
+        .binaryTarget(
+            name: "PartnerizeSDK",
+            path: "./Sources/PartnerizeSDK.xcframework"
+        ),
     ]
 )
