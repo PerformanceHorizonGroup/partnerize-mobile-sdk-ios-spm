@@ -17,7 +17,7 @@ Conversion creation with a range of attributes including custom metadata.
 Conversion item support for accurate shopping basket representation.
 Deep linking support for Web to App and App to App.
 
-Partnerize App Tracking iOS framework supports iOS 9 and later.
+Partnerize App Tracking iOS framework supports iOS 15 and later.
 
 
 ## Installation Guide and Docs
